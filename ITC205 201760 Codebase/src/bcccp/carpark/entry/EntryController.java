@@ -157,6 +157,15 @@ public class EntryController
 				setState(prevstate);
 		}
 			break;
+			case idle;
+			
+			log ("eventDetected:IDLE");
+		if (detectorId.equals(is.getID()) && !carDetected) {
+ 
+		log ("eventDetected: setting state to waiting");
+			setState (STATE.WAITING);
+ 
+ }
 		
 	}
 
