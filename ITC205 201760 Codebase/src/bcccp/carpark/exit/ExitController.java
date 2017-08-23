@@ -98,7 +98,43 @@ public class ExitController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		
+				
+ 	log("carEventDetected: " +  detectorID + ", car Detected : " + carDetected) {
+ 		
+ switch (state) {
+ 	case BLOCKED;
+ if (detectorId.equals.equales(is.getid() ) && !carDetected) {
+ 	setState(prevstate);
+ 	}
+ 	break;
+
+case idle;
+ 	log ("eventDetected:IDLE");
+ if (detectorId.equals(is.getID()) && !carDetected) {
+ 
+ 	log ("eventDetected: setting state to waiting");
+ 	setState (STATE.WAITING);
+ 
+ }
+ 
+ 	else if (detectorId.equals(is.getID()) && !carDetected){
+ 	setState (STATE.BLOCKED);
+ 
+ Break;
+		case  WAITING;
+ 		case  FULL;
+ 		case  VALIDATION;
+ 		case  ISSUED;
+ 		
+ 		if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+ 	setState(STATE.IDLE);
+ 	}
+ 		else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+ 		setState (STATE.BLOCKED);
+ }
+
+			// TODO Auto-generated method stub
 		
 	}
 
