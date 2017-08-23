@@ -175,9 +175,36 @@ public class EntryController
  		case  FULL;
  		case  VALIDATION;
  		case  ISSUED;
-		
+			
+			if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.IDLE);
+		}
+			else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.BLOCKED);
 	}
+		break;
+		
+		case TAKEN;
+			if(detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.IDLE);)
+			else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.ENTERING);
+			}
+		
+		break;
+			
+			case ENTERING;
+				
+				if(detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.ENTERING);
+				
+				else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.TAKEN);
 
-	
+			}
+			
+				
+			
+				
 	
 }
