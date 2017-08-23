@@ -11,7 +11,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	
 	public AdhocTicketDAO(IAdhocTicketFactory factory) {
 		IAdhocTicketDAO.factory= factory;
-		this.setIAdhocTicketDAO(factory);
+		this.setIAdhocTicketDAO(factory); //addition of this which results in invoking of another method
 	}
 	
 		
