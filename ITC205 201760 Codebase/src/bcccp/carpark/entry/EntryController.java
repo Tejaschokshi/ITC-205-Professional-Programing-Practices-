@@ -51,6 +51,23 @@ public class EntryController
 
 	@Override
 	public void buttonPushed() {
+
+	// implementing Auto-generated method stub
+
+		if(state_ == STATE.WAITING) {
+			if(!carpark.isFULL()) {
+				adhocTicket = carpark.issueADHocTicket();
+			
+		String carparkID = adhocTicket.getCarparkID();
+		int ticketNo= adhocTicket.getTicketNo();
+		entrytime = sstem.CuurenttimeMillies();
+		String barcode = adhocTicket.getBarcode();
+	
+		ui.printTicket(carparkId, ticketNo, entryTime, barcode);
+		setState(STATE.ISSUED);
+	
+		}
+
 		// TODO Auto-generated method stub
 		
 	}
