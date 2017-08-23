@@ -124,7 +124,7 @@ public class EntryController
 
 
 
-	// TODO Auto-generated method stub
+	// TicketTaken Auto-generated method stub
 		
 	}
 
@@ -132,7 +132,13 @@ public class EntryController
 
 	@Override
 	public void notifyCarparkEvent() {
-		// TODO Auto-generated method stub
+		// notifyCarparkEvent Auto-generated method stub
+		
+		if()state_ == STATE.FULL) {
+			if (!carpark.idFULL()){
+				setState(STATE.WAITING);
+			}
+		}
 		
 	}
 
@@ -140,7 +146,17 @@ public class EntryController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		// carEventDetected Auto-generated method stub'
+		
+		 log("carEventDetected: " +  detectorID + ", car Detected : " + carDetected) {
+ 		
+		switch (state) {
+			case BLOCKED;
+
+			if (detectorId.equals.equales(is.getid() ) && !carDetected) {
+				setState(prevstate);
+		}
+			break;
 		
 	}
 
