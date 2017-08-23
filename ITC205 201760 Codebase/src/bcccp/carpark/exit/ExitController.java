@@ -109,7 +109,19 @@ public class ExitController
  	}
  	break;
 
-
+case idle;
+ 	log ("eventDetected:IDLE");
+ if (detectorId.equals(is.getID()) && !carDetected) {
+ 
+ 	log ("eventDetected: setting state to waiting");
+ 	setState (STATE.WAITING);
+ 
+ }
+ 
+ 	else if (detectorId.equals(is.getID()) && !carDetected){
+ 	etState (STATE.BLOCKED);
+ 
+ Break;
 
 			// TODO Auto-generated method stub
 		
