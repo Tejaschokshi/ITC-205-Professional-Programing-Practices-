@@ -175,7 +175,12 @@ public class EntryController
  		case  FULL;
  		case  VALIDATION;
  		case  ISSUED;
-		
+			
+			if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.IDLE);
+		}
+			else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.BLOCKED);
 	}
 
 	
