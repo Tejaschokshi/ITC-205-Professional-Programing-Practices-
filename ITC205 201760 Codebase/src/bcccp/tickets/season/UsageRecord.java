@@ -26,14 +26,14 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public long getStartTime() {
-		return startDateTime;
+		return startDateTime; //making return value
 	}
 
 
 
 	@Override
 	public long getEndTime() {
-		return endDateTime;
+		return endDateTime; //making return value
 	}
 
 
