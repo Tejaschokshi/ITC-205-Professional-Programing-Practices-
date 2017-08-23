@@ -111,7 +111,20 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+	
+		if (state_ == STATE.ISSUED || state_ == STATE.VALIDATED ){
+				setState(STATE.TAKEN);
+		}
+			else{
+					ui.beep();
+					log(" ticketTaken: called while in incorrect state");
+			}
+	}
+	
+
+
+
+	// TODO Auto-generated method stub
 		
 	}
 
