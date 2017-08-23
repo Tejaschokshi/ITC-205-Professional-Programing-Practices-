@@ -124,7 +124,7 @@ public class EntryController
 
 
 
-	// TODO Auto-generated method stub
+	// TicketTaken Auto-generated method stub
 		
 	}
 
@@ -132,7 +132,11 @@ public class EntryController
 
 	@Override
 	public void notifyCarparkEvent() {
-		// TODO Auto-generated method stub
+		// notifyCarparkEvent Auto-generated method stub
+		
+		if()state_ == STATE.FULL) {
+			
+			
 		
 	}
 
