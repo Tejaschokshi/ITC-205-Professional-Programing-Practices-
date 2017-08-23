@@ -170,6 +170,11 @@ public class EntryController
 			setState (STATE.BLOCKED);
  
 			Break;	
+			
+		case  WAITING;
+ 		case  FULL;
+ 		case  VALIDATION;
+ 		case  ISSUED;
 		
 	}
 
