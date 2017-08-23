@@ -27,6 +27,12 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
+
+              os.resgisterResponder(this);
+              is.resgisterResponder(this);
+              ui.resgisterResponder(this);
+           
+          
 		//TODO Implement constructor
 	}
 
