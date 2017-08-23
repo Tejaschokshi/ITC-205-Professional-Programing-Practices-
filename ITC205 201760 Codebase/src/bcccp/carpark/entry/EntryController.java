@@ -136,7 +136,7 @@ public class EntryController
 		
 		if()state_ == STATE.FULL) {
 			if (!carpark.idFULL()){
-				
+				setState(STATE.WAITING);
 			
 			
 		
