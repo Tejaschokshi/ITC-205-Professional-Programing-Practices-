@@ -202,8 +202,22 @@ public class EntryController
 				setState (STATE.TAKEN);
 
 			}
+			break;
 			
+			case ENTERED;
 				
+				if(detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.ENTERING);
+				
+				else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.IDLE);
+				}
+				Break;
+				
+				Default;
+				break;
+				
+				}
 			
 				
 	
