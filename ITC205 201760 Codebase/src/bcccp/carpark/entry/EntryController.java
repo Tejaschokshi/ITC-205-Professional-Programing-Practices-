@@ -194,7 +194,17 @@ public class EntryController
 		break;
 			
 			case ENTERING;
+				
+				if(detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+				setState(STATE.ENTERING);
+				
+				else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
+				setState (STATE.TAKEN);
+
+			}
 			
-	
+				
+			
+				
 	
 }
