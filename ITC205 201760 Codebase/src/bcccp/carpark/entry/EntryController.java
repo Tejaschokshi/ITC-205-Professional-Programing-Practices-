@@ -135,6 +135,8 @@ public class EntryController
 		// notifyCarparkEvent Auto-generated method stub
 		
 		if()state_ == STATE.FULL) {
+			if (!carpark.idFULL()){
+				
 			
 			
 		
