@@ -31,7 +31,9 @@ public class ExitController
               os.resgisterResponder(this);
               is.resgisterResponder(this);
               ui.resgisterResponder(this);
-           
+
+            prevState = STATE.IDLE;
+              setState( STATE.IDLE);
           
 		//TODO Implement constructor
 	}
