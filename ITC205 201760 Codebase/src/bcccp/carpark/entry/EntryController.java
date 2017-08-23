@@ -87,16 +87,44 @@ public class EntryController
 	public void ticketInserted(String barcode)
 
 	 {
-		
+			if(state_ == STATE.WAITING) {
+				try {
+					(carpark.isSeasonTicketValid(barcode))&&
+					!carpark.isSeasonTicketInuse(barcode))
+					{
+						this.seasonTicketId = barcode;
+						setState(STATE.VALIDATED);
+						
+					}
+				
+					else {
+						ui.beep();
+						seasonTicketId = null;
+						log("ticketInserted; invalid ticket id ");
+						 }
+					}
 		// TODO Auto-generated method stub
 		
-	}
+		}
 
 
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+	
+		if (state_ == STATE.ISSUED || state_ == STATE.VALIDATED ){
+				setState(STATE.TAKEN);
+		}
+			else{
+					ui.beep();
+					log(" ticketTaken: called while in incorrect state");
+			}
+	}
+	
+
+
+
+	// TODO Auto-generated method stub
 		
 	}
 
