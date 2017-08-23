@@ -67,15 +67,27 @@ public class EntryController
 		setState(STATE.ISSUED);
 	
 		}
-
+		
+		else { 
+		setState(STATE.FULL);
+		}
+}
+	else { 
+		ui.beep();
+		log(""buttonPushed: called while in incorrect state");
+		}
 		// TODO Auto-generated method stub
+	
 		
 	}
 
 
 
 	@Override
-	public void ticketInserted(String barcode) {
+	public void ticketInserted(String barcode)
+
+	 {
+		
 		// TODO Auto-generated method stub
 		
 	}
