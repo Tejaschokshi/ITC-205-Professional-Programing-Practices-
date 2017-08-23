@@ -146,7 +146,7 @@ public class EntryController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// carEventDetected Auto-generated method stub'
+		// implementing carEventDetected Auto-generated method stub'
 		
 		 log("carEventDetected: " +  detectorID + ", car Detected : " + carDetected) {
  		
@@ -165,7 +165,11 @@ public class EntryController
 		log ("eventDetected: setting state to waiting");
 			setState (STATE.WAITING);
  
- }
+		}
+			else if (detectorId.equals(is.getID()) && !carDetected){
+			setState (STATE.BLOCKED);
+ 
+			Break;	
 		
 	}
 
