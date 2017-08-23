@@ -10,6 +10,15 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	
 	
 	public AdhocTicketDAO(IAdhocTicketFactory factory) {
+		IAdhocTicketDAO.factory= factory;
+		this.setIAdhocTicketDAO(factory);
+	}
+	
+		
+		public String getAdhocTicketDAO(){
+			return AdhocTicketDAO;
+			
+		}
 		//TODO Implement constructor
 	}
 
