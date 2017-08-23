@@ -15,8 +15,8 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	}
 	
 		
-		public String getAdhocTicketDAO(){
-			return AdhocTicketDAO;
+		public String getAdhocTicketDAO(){   //get methods
+			return AdhocTicketDAO;          //returns the value
 			
 		}
 		//TODO Implement constructor
