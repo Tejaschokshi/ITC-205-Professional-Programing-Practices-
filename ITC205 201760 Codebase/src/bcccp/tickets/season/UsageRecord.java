@@ -9,7 +9,9 @@ public class UsageRecord implements IUsageRecord {
 	
 	
 	public UsageRecord(String ticketId, long startDateTime) {
-		//TODO Implement constructor
+		//denoting instance variables
+		this.ticketId = ticketId;
+		this.startDateTime = startDateTime;
 	}
 
 
@@ -24,16 +26,14 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public long getStartTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return startDateTime; //making return value
 	}
 
 
 
 	@Override
 	public long getEndTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return endDateTime; //making return value
 	}
 
 

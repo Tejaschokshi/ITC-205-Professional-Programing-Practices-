@@ -14,9 +14,11 @@ public class AdhocTicket implements IAdhocTicket {
 
 	
 	
-	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
+	public AdhocTicket(String carparkId, int ticketNo, String barcode) 
+	//This set of code helps with the implementation of the constructor
+	{
 		//TDO Implement constructor
-		//This set of code helps with the implementation of the constructor
+
 		AdhocTicket {
             carparkId= “tycar”;
            ticketNo= 2;
@@ -24,6 +26,8 @@ public class AdhocTicket implements IAdhocTicket {
 
 
 	}
+
+	
 
 
 	@Override
