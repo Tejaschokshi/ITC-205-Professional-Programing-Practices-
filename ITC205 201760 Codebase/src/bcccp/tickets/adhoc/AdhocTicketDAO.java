@@ -44,6 +44,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public List<IAdhocTicket> getCurrentTickets() {
+		get.AdhocticketDAO(tickets);//get method that returns the all the tickets value 
 		// TODO Auto-generated method stub
 		return null;
 	}
