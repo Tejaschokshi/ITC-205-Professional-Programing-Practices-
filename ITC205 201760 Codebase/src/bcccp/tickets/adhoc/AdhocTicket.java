@@ -14,11 +14,9 @@ public class AdhocTicket implements IAdhocTicket {
 
 	
 	
-	public AdhocTicket(String carparkId, int ticketNo, String barcode) 
-	//This set of code helps with the implementation of the constructor
-	{
+	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
 		//TDO Implement constructor
-
+		//This set of code helps with the implementation of the constructor
 		AdhocTicket {
             carparkId= “tycar”;
            ticketNo= 2;
@@ -26,8 +24,6 @@ public class AdhocTicket implements IAdhocTicket {
 
 
 	}
-
-	
 
 
 	@Override
@@ -89,6 +85,9 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
+		dateTime=NewTime;
+		
+
 		
 	}
 
