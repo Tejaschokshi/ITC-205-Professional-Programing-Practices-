@@ -135,6 +135,8 @@ case idle;
  break;
  
  case TAKEN;
+		if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
+ 	setState(STATE.IDLE);
 		
 			
 					// Auto-generated method stub implementetion.
