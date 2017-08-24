@@ -18,12 +18,13 @@ public class AdhocTicket implements IAdhocTicket {
 	//This set of code helps with the implementation of the constructor
 	{
 		//TDO Implement constructor
+
 		AdhocTicket {
             carparkId= “tycar”;
            ticketNo= 2;
            barcode= “023ty”
 
-}
+
 	}
 
 	
@@ -32,6 +33,8 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public int getTicketNo() {
 		// TODO Auto-generated method stub
+		//This sets of code gets the number of tickets
+		AdhocTicket t= new AdhocTicket (ticketNo);
 		return 0;
 	}
 
@@ -39,6 +42,8 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getBarcode() {
 		// TODO Auto-generated method stub
+		// This set of code gets the barcode
+		AdhocTicket bcode= new AdhocTicket (barcode);
 		return null;
 	}
 
@@ -46,6 +51,8 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getCarparkId() {
 		// TODO Auto-generated method stub
+		// This set of code gets the car park Id
+		AdhocTicket id= new AdhocTicket (carparkId);
 		return null;
 	}
 
@@ -53,6 +60,10 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void enter(long dateTime) {
 		// TODO Auto-generated method stub
+		//This constructor initializes the object with the current date and time.
+		             dateTime= newTime;
+		return null;
+		
 		
 	}
 
@@ -60,13 +71,17 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public long getEntryDateTime() {
 		// TODO Auto-generated method stub
-		return 0;
+		// This set of code returns the value of entry date and time
+		return  entryDateTime;
+		
 	}
 
 
 	@Override
 	public boolean isCurrent() {
 		// TODO Auto-generated method stub
+		//This set of code returns the value as false
+		isCurrent= NewTime;
 		return false;
 	}
 
