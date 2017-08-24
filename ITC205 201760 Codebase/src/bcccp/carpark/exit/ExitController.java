@@ -128,9 +128,6 @@ case idle;
  		if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
  	setState(STATE.IDLE);
  	}
- 		else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
- 		setState (STATE.BLOCKED);
- }
 			
 					// TODO Auto-generated method stub
 		
