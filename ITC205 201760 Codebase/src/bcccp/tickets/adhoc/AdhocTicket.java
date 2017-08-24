@@ -38,6 +38,8 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getBarcode() {
 		// TODO Auto-generated method stub
+		// This set of code gets the barcode
+		AdhocTicket bcode= new AdhocTicket (barcode);
 		return null;
 	}
 
