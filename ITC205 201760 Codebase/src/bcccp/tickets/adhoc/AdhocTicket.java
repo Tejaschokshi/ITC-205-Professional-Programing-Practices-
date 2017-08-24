@@ -86,6 +86,7 @@ public class AdhocTicket implements IAdhocTicket {
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
 		dateTime=NewTime;
+		charge= NewCharge;
 		
 
 		
