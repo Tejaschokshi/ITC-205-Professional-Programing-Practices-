@@ -90,6 +90,8 @@ public class ExitController
               else {
                   ui.beep();
                        log("ticketTaken:calledd ehile an incoorect state");
+					   
+					   // Review the ticketTaken method for smeet. 
 
 		// TODO Auto-generated method stub
 		
