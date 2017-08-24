@@ -27,7 +27,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	@Override
 	public IAdhocTicket createTicket(String carparkId) {
 		public void setIAdhocTicketDAO(carparkId);   //set method
-		 get.AdhocTicketDAO(1); // TODO Auto-generated method stub
+		 get.AdhocTicketDAO(carparkId); // TODO Auto-generated method stub
 		return null;  //returns null
 	}
 
@@ -35,7 +35,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public IAdhocTicket findTicketByBarcode(String barcode) {
-		// TODO Auto-generated method stub
+		get.AdhocTicketDAO(barcode);// TODO Auto-generated method stub
 		return null;
 	}
 
