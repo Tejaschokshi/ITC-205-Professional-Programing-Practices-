@@ -9,7 +9,7 @@ public class UsageRecord implements IUsageRecord {
 	
 	
 	public UsageRecord(String ticketId, long startDateTime) {
-		//denoting instance variables
+		//denoting instance variables.
 		this.ticketId = ticketId;
 		this.startDateTime = startDateTime;
 	}
