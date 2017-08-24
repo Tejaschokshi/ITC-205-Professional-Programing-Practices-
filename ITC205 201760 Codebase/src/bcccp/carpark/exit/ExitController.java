@@ -70,6 +70,7 @@ public class ExitController
                   ui.beep();
                       ui.discardTicket();
                    Log("ticketInserted:calledd ehile an incoorect state");
+				   // Smeet Can you please review thi method.
 		// TODO Auto-generated method stub
 		
 	}
