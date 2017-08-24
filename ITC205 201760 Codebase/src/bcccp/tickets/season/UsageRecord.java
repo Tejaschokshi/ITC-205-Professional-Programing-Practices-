@@ -34,8 +34,8 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public long getEndTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		// using return to get value from endDateTime method
+		return endDateTime;
 	}
 
 
