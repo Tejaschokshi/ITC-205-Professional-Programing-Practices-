@@ -56,7 +56,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void enter(long dateTime) {
 		// TODO Auto-generated method stub
-		
+		//This constructor initializes the object with the current date and time.
 		             dateTime= newTime;
 		return null;
 		
