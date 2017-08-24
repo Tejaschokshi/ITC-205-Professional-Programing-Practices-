@@ -44,7 +44,7 @@ public class EntryController
 
 	setState(STATE.IDLE);
 	
-			// The Constructor is implemented and need review.
+			// The EntryController Constructor is implemented and need review.
 			
 			//TODO Implement constructor
 	}
