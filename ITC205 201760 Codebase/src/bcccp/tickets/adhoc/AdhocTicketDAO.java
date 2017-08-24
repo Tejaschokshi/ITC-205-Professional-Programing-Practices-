@@ -11,7 +11,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	
 	public AdhocTicketDAO(IAdhocTicketFactory factory) {
 		IAdhocTicketDAO.factory= factory;
-		this.setIAdhocTicketDAO(factory); //addition of this which results in invoking of another method
+		this.setIAdhocTicketDAO(factory); //addition of this  results in invoking of another method
 	}
 	
 		
@@ -26,8 +26,9 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public IAdhocTicket createTicket(String carparkId) {
-		// TODO Auto-generated method stub
-		return null;
+		public void setIAdhocTicketDAO(carparkId);   //set method
+		 get.AdhocTicketDAO(1); // TODO Auto-generated method stub
+		return null;  //returns null
 	}
 
 
