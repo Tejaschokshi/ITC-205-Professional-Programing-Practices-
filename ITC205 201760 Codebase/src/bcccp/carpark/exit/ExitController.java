@@ -142,6 +142,12 @@ case idle;
  	setState(STATE.IDLE);
 		
 			
+			
+			
+			
+			
+			
+			// Review the ticketTaken method for smeet.
 					// Auto-generated method stub implementetion.
 		
 	}
