@@ -35,8 +35,9 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public IAdhocTicket findTicketByBarcode(String barcode) {
-		get.AdhocTicketDAO(barcode);// TODO Auto-generated method stub
-		return null;
+		get.AdhocTicketDAO(barcode); //get method which gets the barcode
+		// TODO Auto-generated method stub
+		return null;         //returns value 
 	}
 
 
