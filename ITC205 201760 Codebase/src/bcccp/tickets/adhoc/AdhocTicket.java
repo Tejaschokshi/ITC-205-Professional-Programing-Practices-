@@ -76,6 +76,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean isCurrent() {
 		// TODO Auto-generated method stub
+		isCurrent= NewTime;
 		return false;
 	}
 
