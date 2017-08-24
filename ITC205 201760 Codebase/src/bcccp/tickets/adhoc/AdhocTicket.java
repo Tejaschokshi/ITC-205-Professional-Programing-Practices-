@@ -87,6 +87,7 @@ public class AdhocTicket implements IAdhocTicket {
 		// TODO Auto-generated method stub
 		// This set of code initializes the object with current time
 		dateTime=NewTime;
+		// This set of code initializes the object with the charges for parking
 		charge= NewCharge;
 		
 
