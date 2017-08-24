@@ -85,6 +85,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
+		// This set of code initializes the object with current time
 		dateTime=NewTime;
 		charge= NewCharge;
 		
