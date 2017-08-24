@@ -123,18 +123,21 @@ case idle;
  
  Break;
 		case  WAITING;
- 		case  FULL;
- 		case  VALIDATION;
- 		case  ISSUED;
+ 		case  PROCESSED; 
  		
  		if (detectorId.equals(outsideEntrySensor_getId() )&& !carDetected){
  	setState(STATE.IDLE);
  	}
  		else if (detectorId.equals(insideEntrySensor_getId() )&& !carDetected){ 
  		setState (STATE.BLOCKED);
+		
  }
-	
-					// TODO Auto-generated method stub
+ break;
+ 
+ case TAKEN;
+		
+			
+					// Auto-generated method stub implementetion.
 		
 	}
 
