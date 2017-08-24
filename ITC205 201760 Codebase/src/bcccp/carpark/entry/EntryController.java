@@ -43,7 +43,9 @@ public class EntryController
 	ui.registerController(this);
 
 	setState(STATE.IDLE);
-
+	
+			// The Constructor is implemented and need review.
+			
 			//TODO Implement constructor
 	}
 
