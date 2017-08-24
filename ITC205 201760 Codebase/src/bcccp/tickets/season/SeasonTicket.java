@@ -40,6 +40,7 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getId() {
+		get.carpakId(ticketId); //get method that returns the ticketId
 		// TODO Auto-generated method stub
 		return null;
 	}
