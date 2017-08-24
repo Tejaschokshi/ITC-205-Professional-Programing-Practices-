@@ -106,6 +106,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean isPaid() {
 		// TODO Auto-generated method stub
+		isPaid= newPay;
 		return false;
 	}
 
