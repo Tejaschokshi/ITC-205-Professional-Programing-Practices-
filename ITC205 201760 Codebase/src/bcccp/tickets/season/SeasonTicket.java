@@ -18,6 +18,23 @@ public class SeasonTicket implements ISeasonTicket {
 			             String carparkId, 
 			             long startValidPeriod,
 			             long endValidPeriod) {
+		SeasonTicket.ticketID=ticketId;
+		SeasonTicket.carparkID=carparkId;
+		SeasonTicket.startValidPeriod=startvalidPeriod;
+		SeasonTicket.endvalidPeriod=endvalidPeriod;
+		
+		public int getcarparkId(){
+		return carparkId;
+		}
+		public int getticketId(){
+		return ticketId;
+		}
+		public void setstartvalid period(startvalidperiod){
+		startvalidperiod=false;
+		}
+		public void setendvalid period(endValidPeriod){
+		endvalidPeriod=false;
+		}
 		//TDO Implement constructor
 	}
 
