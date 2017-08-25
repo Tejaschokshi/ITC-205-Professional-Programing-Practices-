@@ -73,16 +73,16 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public long getEndValidPeriod() {
-		get.EndValidperiod(EndValidPeriod);
-		long a=EndValidPeriod;
-		if (a>y){
-			int b=a;
+		get.EndValidperiod(EndValidPeriod); //gets the value of endvalidPeriod
+		long a=EndValidPeriod;           //creates a variable a and assign the value of endvalid period into a
+		if (a>y){              
+			int b=a;       //if statement if yes a new varaible b is created and value of a is assigned into it
 		}
 		if (a<y){
-			int b=0;
+			int b=0;     //if statement if yes a new variable b is created and value of b made zero.
 		}
 		// TODO Auto-generated method stub
-		return 0;
+		return 0;              //returns the value
 	}
 
 	@Override
