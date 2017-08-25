@@ -33,10 +33,10 @@ public class SeasonTicket implements ISeasonTicket {
 		return ticketId;                             //return ticketId
 		} 
 		public long setstartvalid period(startvalidperiod){      //This code set startvalidperiod to false
-		startvalidperiod=false;
+		 return startvalidperiod;
 		}                                                     //end of the code
 		public long setendvalid period(endValidPeriod){            //this code sets the value of endvalidPeriod to false
-		endvalidPeriod=false;
+		return endvalidPeriod;
 		}                                                           //end of the code
 		//TDO Implement constructor
 	}
@@ -60,6 +60,9 @@ public class SeasonTicket implements ISeasonTicket {
 	public long getStartValidPeriod() {     
 		get.startValidperiod(startValidperiod);        
 		 long x=startValidperiod;
+		if (state==true){
+			long y= 
+		}
 		// TODO Auto-generated method stub
 		return 0;
 	}
