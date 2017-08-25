@@ -26,17 +26,27 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 
 	@Override
-	public IAdhocTicket createTicket(String carparkId) {
+	public IAdhocTicket createTicket(String carparkId) { //start of the code 
 		public void setIAdhocTicketDAO(carparkId);   
-		 get.AdhocTicketDAO(carparkId);
+		 get.AdhocTicketDAO(carparkId);           //get method to get the ticket 
 		
-		return null;
+		return null;                        //returns the value
 	}
 
 
 
 	@Override
 	public IAdhocTicket findTicketByBarcode(String barcode) {
+		int x=get.adhocTicketDAO(carparkID);
+		long y=get.adhocTicketDAO(date time);
+		int i=0;
+		if (IAdhocTicket[i]=(barcode){
+			return null;
+		}
+		    else { i=i+1;
+			 }
+			    
+		
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -45,6 +55,12 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public List<IAdhocTicket> getCurrentTickets() {
+		get.AdhocticketDAO(tickets);
+		int i=0;
+		int a=length.IAdhocticket;
+		if(i>a;i++){
+			system.out.println(Adhocticket[i]);
+		}
 		// TODO Auto-generated method stub
 		return null;
 	}
