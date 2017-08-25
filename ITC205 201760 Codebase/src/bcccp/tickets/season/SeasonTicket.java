@@ -21,8 +21,11 @@ public class SeasonTicket implements ISeasonTicket {
 		SeasonTicket.ticketID=ticketId;          //assigning somemethod in ticketId
 		SeasonTicket.carparkID=carparkId;           //assigning some method in  carparkId
 		SeasonTicket.startValidPeriod=startvalidPeriod;       //assigning somemethod in startValidPeriod
-		SeasonTicket.endvalidPeriod=endvalidPeriod;          //assigning some method in endvalidPeriod
-		
+		SeasonTicket.endvalidPeriod=endvalidPeriod; //assigning some method in endvalidPeriod
+		startValidPeriod.registerresponder(this);
+		endvalidperiod.registeresponder(this);
+		prevState= STATE.IDLE;
+		setState(STATE.IDLE);
 		public string getcarparkId(){                              //get method
 		return carparkId;                                       //return method
 		}
@@ -54,8 +57,8 @@ public class SeasonTicket implements ISeasonTicket {
 	}
 
 	@Override
-	public long getStartValidPeriod() {
-		get.startValidperiod(startValidperiod);
+	public long getStartValidPeriod() {     
+		get.startValidperiod(startValidperiod);        
 		 long x=startValidperiod;
 		// TODO Auto-generated method stub
 		return 0;
