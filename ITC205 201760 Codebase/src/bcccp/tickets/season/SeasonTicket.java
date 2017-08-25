@@ -61,10 +61,12 @@ public class SeasonTicket implements ISeasonTicket {
 		get.startValidperiod(startValidperiod);//gets the value of startvalidPeriod        
 		 long x=startValidperiod;              //assigns the value of startvalidPeriod into x
 		if (x>0){
-			int y= x;                    //if yes the value of x is assigned into y
+			int y= x; 
+			return 0;//if yes the value of x is assigned into y
 			}
 		if (x=0){
-			int y=0;                  //if yes the value of y is assigned zero   
+			int y=0; 
+			return 0;//if yes the value of y is assigned zero   
 		}
 		else 
 		// TODO Auto-generated method stub
@@ -76,10 +78,12 @@ public class SeasonTicket implements ISeasonTicket {
 		get.EndValidperiod(EndValidPeriod); //gets the value of endvalidPeriod
 		long a=EndValidPeriod;           //creates a variable a and assign the value of endvalid period into a
 		if (a>y){              
-			int b=a;       //if statement if yes a new varaible b is created and value of a is assigned into it
+			int b=a; 
+			return 0;//if statement if yes a new varaible b is created and value of a is assigned into it
 		}
 		if (a<y){
-			int b=0;     //if statement if yes a new variable b is created and value of b made zero.
+			int b=0; 
+			return 0;//if statement if yes a new variable b is created and value of b made zero.
 		}
 		// TODO Auto-generated method stub
 		return 0;              //returns the value
