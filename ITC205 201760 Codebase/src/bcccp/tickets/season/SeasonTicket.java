@@ -201,13 +201,14 @@ public class SeasonTicket implements ISeasonTicket { //start of this code
 			endusage=endValidTime-startvalidtime;    //calculate this equation if true
 			              
 		}
-		int  []endusage= get.usage(usage);
-		int i=length.endusage;
-		int a=0;
+		int  []endusage= get.usage(usage);        //creates an array named endusage and assign some alue in it.
+		           
+		int i=length.endusage;                    //creates an variable i and assign some value in it
+		int a=0;                                    //creates an variable and assign value zero in it.
 		if (a>=0;a++){
-			system.out.println("the enduasge are";endusage[a]);
+			system.out.println("the enduasge are";endusage[a]);          //prints some value
 		
 		}
-		return null;
+		return null;          //returns the value
 
 }
