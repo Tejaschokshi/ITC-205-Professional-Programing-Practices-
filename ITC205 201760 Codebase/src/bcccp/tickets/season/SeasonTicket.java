@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SeasonTicket implements ISeasonTicket {
+public class SeasonTicket implements ISeasonTicket { //start of this code
 	
-	private List<IUsageRecord> usages;
-	private IUsageRecord currentUsage = null;
+	private List<IUsageRecord> usages;         //assign an array
+	private IUsageRecord currentUsage = null; //create a variable and assign its value to null
 	
-	private String ticketId;
-	private String carparkId;
-	private long startValidPeriod;
-	private long endValidPeriod;
-	
+	private String ticketId;                //create a variable named ticketId
+	private String carparkId;               //create a variable named carparkId
+	private long startValidPeriod;            //create a variable named startvalidPeriod
+	private long endValidPeriod;             //create a variable named endvalidperiod
+	//This set of codeimplements a constructor by different stages either through assigning or creating new variables
 	public SeasonTicket (String ticketId, 
 			             String carparkId, 
 			             long startValidPeriod,
@@ -40,7 +40,8 @@ public class SeasonTicket implements ISeasonTicket {
 		}                                                           //end of the code
 		//TDO Implement constructor
 	}
-
+	
+          //This set of code gets the ticketId and returns the ticket
 	@Override
 	public String getId() {
 		get.ticketId(ticketId);
@@ -48,14 +49,15 @@ public class SeasonTicket implements ISeasonTicket {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+             //This set of code gets the carparkId and return its value
 	@Override
 	public String getCarparkId() {
 		get.carparkId(CarparkId); //get method that returns the carparkId
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+          //this set of code gets the startvalid period of the customer 
 	@Override
 	public long getStartValidPeriod() {     
 		get.startValidperiod(startValidperiod);//gets the value of startvalidPeriod        
@@ -72,7 +74,7 @@ public class SeasonTicket implements ISeasonTicket {
 		// TODO Auto-generated method stub
 		return 0;                   //returns the value
 	}
-
+             //this set of code gets the end valid period of the costomer
 	@Override
 	public long getEndValidPeriod() {
 		get.EndValidperiod(EndValidPeriod); //gets the value of endvalidPeriod
@@ -88,7 +90,8 @@ public class SeasonTicket implements ISeasonTicket {
 		// TODO Auto-generated method stub
 		return 0;              //returns the value
 	}
-
+ 
+	//this set of code checks whether the ticket is in use or not and returns either true or false
 	@Override
 	public boolean inUse() {                   //start of the code
 		get.startValidPeriod(startvalidperiod);        //gets the value of startvalidperiod
@@ -106,7 +109,7 @@ public class SeasonTicket implements ISeasonTicket {
 		// TODO Auto-generated method stub
 		return false;                  //returns false if nothing matches
 	}                              //end of the program
-
+         //this set of code gets records of the tickets
 	@Override
 	import java.util.SimpleDateformat; 
 	
@@ -128,7 +131,9 @@ public class SeasonTicket implements ISeasonTicket {
 					   }// TODO Auto-generated method stub
 		
 	}
-
+           
+       
+           //this set of code gets all the current records of the ticket
 	@Override
         import java.util.SimpleDateformat;
 
@@ -148,6 +153,7 @@ public class SeasonTicket implements ISeasonTicket {
 		return null;
 	}                //end of the code
 
+          //This set of code checks the endperiod of the ticket
 	@Override
 	public void endUsage(long dateTime) {          //start of the code
 		get.ticketid(ticketid);             //get method to get the value of ticketId
@@ -174,6 +180,7 @@ public class SeasonTicket implements ISeasonTicket {
 		
 	}
 
+        //This set of code lists all the records
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
 		get.ticketid(ticketid);             //get method to get the value of ticketId
@@ -186,13 +193,22 @@ public class SeasonTicket implements ISeasonTicket {
 		long endusage=dateTime-starvalidTime;     //new variable is created and the result of the
 		                                               //mathematical equation is assigned to it 
 		if (endusage>0){
-			return endusage;                 //if statement if true returns thevalue
-			                                 //return value
+			                //if statement if true returns thevalue
+			                                 
 		       
 		}
 		if (endusage<0){                             //if statement for the endusage
 			endusage=endValidTime-startvalidtime;    //calculate this equation if true
-			return Endusage;              //returns the value
+			              
 		}
+		int  []endusage= get.usage(usage);        //creates an array named endusage and assign some alue in it.
+		           
+		int i=length.endusage;                    //creates an variable i and assign some value in it
+		int a=0;                                    //creates an variable and assign value zero in it.
+		if (a>=0;a++){
+			system.out.println("the enduasge are";endusage[a]);          //prints some value
+		
+		}
+		return null;          //returns the value
 
 }
