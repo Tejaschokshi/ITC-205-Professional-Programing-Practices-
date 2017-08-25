@@ -60,9 +60,13 @@ public class SeasonTicket implements ISeasonTicket {
 	public long getStartValidPeriod() {     
 		get.startValidperiod(startValidperiod);        
 		 long x=startValidperiod;
-		if (state==true){
-			long y= 
+		if (x>0){
+			int y= x;
+			}
+		if (x=0){
+			int y=x;
 		}
+		else 
 		// TODO Auto-generated method stub
 		return 0;
 	}
