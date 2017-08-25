@@ -26,11 +26,11 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 
 	@Override
-	public IAdhocTicket createTicket(String carparkId) {
+	public IAdhocTicket createTicket(String carparkId) { //start of the code 
 		public void setIAdhocTicketDAO(carparkId);   
-		 get.AdhocTicketDAO(carparkId);
+		 get.AdhocTicketDAO(carparkId);           //get method to get the ticket 
 		
-		return null;
+		return null;                        //returns the value
 	}
 
 
