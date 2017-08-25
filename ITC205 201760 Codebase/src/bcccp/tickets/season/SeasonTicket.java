@@ -78,6 +78,9 @@ public class SeasonTicket implements ISeasonTicket {
 		if (a>y){
 			int b=a;
 		}
+		if (a<y){
+			int b=0;
+		}
 		// TODO Auto-generated method stub
 		return 0;
 	}
