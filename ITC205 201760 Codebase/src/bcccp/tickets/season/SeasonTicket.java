@@ -21,26 +21,30 @@ public class SeasonTicket implements ISeasonTicket {
 		SeasonTicket.ticketID=ticketId;          //assigning somemethod in ticketId
 		SeasonTicket.carparkID=carparkId;           //assigning some method in  carparkId
 		SeasonTicket.startValidPeriod=startvalidPeriod;       //assigning somemethod in startValidPeriod
-		SeasonTicket.endvalidPeriod=endvalidPeriod;          //assigning some method in endvalidPeriod
-		
-		public int getcarparkId(){                              //get method
+		SeasonTicket.endvalidPeriod=endvalidPeriod; //assigning some method in endvalidPeriod
+		startValidPeriod.registerresponder(this);
+		endvalidperiod.registeresponder(this);
+		prevState= STATE.IDLE;
+		setState(STATE.IDLE);
+		public string getcarparkId(){                              //get method
 		return carparkId;                                       //return method
 		}
-		public int getticketId(){                   //get method for ticket
+		public string getticketId(){                   //get method for ticket
 		return ticketId;                             //return ticketId
 		} 
-		public void setstartvalid period(startvalidperiod){      //This code set startvalidperiod to false
-		startvalidperiod=false;
+		public long setstartvalid period(startvalidperiod){      //This code set startvalidperiod to false
+		 return startvalidperiod;
 		}                                                     //end of the code
-		public void setendvalid period(endValidPeriod){            //this code sets the value of endvalidPeriod to false
-		endvalidPeriod=false;
+		public long setendvalid period(endValidPeriod){            //this code sets the value of endvalidPeriod to false
+		return endvalidPeriod;
 		}                                                           //end of the code
 		//TDO Implement constructor
 	}
 
 	@Override
 	public String getId() {
-		get.carpakId(ticketId); //get method that returns the ticketId
+		get.ticketId(ticketId);
+		//get method that returns the ticketId
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -53,9 +57,18 @@ public class SeasonTicket implements ISeasonTicket {
 	}
 
 	@Override
-	public long getStartValidPeriod() {
+	public long getStartValidPeriod() {     
+		get.startValidperiod(startValidperiod);//gets the value of startvalidPeriod        
+		 long x=startValidperiod;              //assigns the value of startvalidPeriod into x
+		if (x>0){
+			int y= x;                    //if yes the value of x is assigned into y
+			}
+		if (x=0){
+			int y=0;                  //if yes the value of y is assigned zero   
+		}
+		else 
 		// TODO Auto-generated method stub
-		return 0;
+		return 0;                   //returns the value
 	}
 
 	@Override
