@@ -90,22 +90,22 @@ public class SeasonTicket implements ISeasonTicket {
 	}
 
 	@Override
-	public boolean inUse() {
-		get.startValidPeriod(startvalidperiod);
-		get.EndValidPeriod(EndValidPeriod);
-		if (startValidperiod>EndValidPeriod){
-			boolean inuse=true;
+	public boolean inUse() {                   //start of the code
+		get.startValidPeriod(startvalidperiod);        //gets the value of startvalidperiod
+		get.EndValidPeriod(EndValidPeriod);                //gets the value of endvalidperiod
+		if (startValidperiod>EndValidPeriod){               //if statement
+			boolean inuse=true;                    //if true assing the value of inuse to true
 			
 		 }
 		if (startValidperiod=EndValidPeriod){
-			boolean inuse=false;
+			boolean inuse=false;                      //if true assign the value of inuse to false
 		}
 		if (startValidPeriod<EndValidPeriod){
-			boolean inuse=false;
+			boolean inuse=false;          //if true assign the value of inuse to false
 		}
 		// TODO Auto-generated method stub
-		return false;
-	}
+		return false;                  //returns false if nothing matches
+	}                              //end of the program
 
 	@Override
 	public void recordUsage(IUsageRecord record) {
