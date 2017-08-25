@@ -186,13 +186,21 @@ public class SeasonTicket implements ISeasonTicket {
 		long endusage=dateTime-starvalidTime;     //new variable is created and the result of the
 		                                               //mathematical equation is assigned to it 
 		if (endusage>0){
-			return endusage;                 //if statement if true returns thevalue
-			                                 //return value
+			                //if statement if true returns thevalue
+			                                 
 		       
 		}
 		if (endusage<0){                             //if statement for the endusage
 			endusage=endValidTime-startvalidtime;    //calculate this equation if true
-			return Endusage;              //returns the value
+			              
 		}
+		int  []endusage= get.usage(usage);
+		int i=length.endusage;
+		int a=0;
+		if (a>=0;a++){
+			system.out.println("the enduasge are";endusage[a]);
+		
+		}
+		return null;
 
 }
