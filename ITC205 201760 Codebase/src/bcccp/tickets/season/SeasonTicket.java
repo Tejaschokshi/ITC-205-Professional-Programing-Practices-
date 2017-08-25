@@ -119,7 +119,6 @@ public class SeasonTicket implements ISeasonTicket {
 		this.ticketId=id;
 		this.enter_time=new Date();
 		System.out.println("ID: "+this.ticketId+" Enter time: "+this.enter_time); //prints the time the car entered
-	}
 		
 		SimpleDateFormat sdf=new SimpleDateFormat("HH:mm:ss");    //assign current time in sdf
 	     long usage=sdf-startValidPeriod;                           //creates a variable usage and addign some value into it
@@ -132,6 +131,17 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public IUsageRecord getCurrentUsageRecord() {
+		get.ticketid(ticketid);
+		get.CarparkId(CarparkId);
+		get.StartValidTime(startValidTime);
+		get.EndValidTime(EndValidTime);
+		this.ticketId=Id;
+		this.enter_time=new date();
+		System.out.Println("Id: "+this.TicketId+"Enter time: "+this.enter_time);
+		
+		simpleDataFormat sdf=new simpleDateFormat("HH:mm:ss");
+		long currentusage=sdf-startvalidperiod;
+		
 		// TODO Auto-generated method stub
 		return null;
 	}
