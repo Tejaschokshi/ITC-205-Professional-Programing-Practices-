@@ -55,6 +55,12 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public List<IAdhocTicket> getCurrentTickets() {
+		get.AdhocticketDAO(tickets);
+		int i=0;
+		int a=length.IAdhocticket;
+		if(i>a;i++){
+			system.out.println(Adhocticket[i]);
+		}
 		// TODO Auto-generated method stub
 		return null;
 	}
