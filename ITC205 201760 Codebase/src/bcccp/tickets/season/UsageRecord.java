@@ -21,7 +21,7 @@ public class UsageRecord implements IUsageRecord {
 	@Override
 	public void finalise(long endDateTime) {
 		//denoting instance variables
-		this.endDateTime = endDateTime
+		this.endDateTime = endDateTime;
 		
 	}
 
