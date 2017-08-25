@@ -176,26 +176,23 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
-		get.ticketid(ticketid);            
-		get.CarparkId(CarparkId);               
-		get.StartValidTime(startValidTime);     
-		get.EndValidTime(EndValidTime);            
+		get.ticketid(ticketid);             //get method to get the value of ticketId
+		get.CarparkId(CarparkId);               //get method to get the value of carparkID
+		get.StartValidTime(startValidTime);      //get method to get the vale of startValidtime
+		get.EndValidTime(EndValidTime);            //get method to get the value of endValidtime
 		this.ticketId=Id;                
 		this.enter_time=new date();
 		
-	
-		long endusage=dateTime-starvalidTime;      
+		long endusage=dateTime-starvalidTime;     //new variable is created and the result of the
+		                                               //mathematical equation is assigned to it 
 		if (endusage>0){
-			return endusage;                 
-			                                 
+			return endusage;                 //if statement if true returns thevalue
+			                                 //return value
 		       
 		}
-		if (endusage<0){                             
-			endusage=endValidTime-startvalidtime;    
-			return Endusage;
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+		if (endusage<0){                             //if statement for the endusage
+			endusage=endValidTime-startvalidtime;    //calculate this equation if true
+			return Endusage;              //returns the value
+		}
 
 }
