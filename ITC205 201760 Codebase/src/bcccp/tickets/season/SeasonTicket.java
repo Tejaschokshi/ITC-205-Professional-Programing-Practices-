@@ -130,21 +130,23 @@ public class SeasonTicket implements ISeasonTicket {
 	}
 
 	@Override
-	public IUsageRecord getCurrentUsageRecord() {
-		get.ticketid(ticketid);
-		get.CarparkId(CarparkId);
-		get.StartValidTime(startValidTime);
-		get.EndValidTime(EndValidTime);
-		this.ticketId=Id;
+        import java.util.SimpleDateformat;
+
+	public IUsageRecord getCurrentUsageRecord() {  //start of the code
+		get.ticketid(ticketid);    //gets the value of ticketId
+		get.CarparkId(CarparkId);    //gets the value of carparkID
+		get.StartValidTime(startValidTime);    //gets the value of startvalidtime
+		get.EndValidTime(EndValidTime);           //gets the value of endvalidtime
+		this.ticketId=Id;                
 		this.enter_time=new date();
 		System.out.Println("Id: "+this.TicketId+"Enter time: "+this.enter_time);
 		
-		simpleDataFormat sdf=new simpleDateFormat("HH:mm:ss");
-		long currentusage=sdf-startvalidperiod;
+		simpleDataFormat sdf=new simpleDateFormat("HH:mm:ss");      //assign current time to sdf to get the current usage
+		long currentusage=sdf-startvalidperiod;       //current usage is found through this equation
 		
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}                //end of the code
 
 	@Override
 	public void endUsage(long dateTime) {
