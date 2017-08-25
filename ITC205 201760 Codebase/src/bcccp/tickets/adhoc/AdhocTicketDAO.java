@@ -37,6 +37,9 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 
 	@Override
 	public IAdhocTicket findTicketByBarcode(String barcode) {
+		get.adhocTicketDAO(carparkID);
+		get.adhocTicketDAO(date time);
+		long barcode=AdhocTicketDAO();
 		// TODO Auto-generated method stub
 		return null;
 	}
