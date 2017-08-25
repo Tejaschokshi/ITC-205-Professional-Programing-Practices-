@@ -150,6 +150,24 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public void endUsage(long dateTime) {
+		get.ticketid(ticketid);    
+		get.CarparkId(CarparkId);    
+		get.StartValidTime(startValidTime);    
+		get.EndValidTime(EndValidTime);           
+		this.ticketId=Id;                
+		this.enter_time=new date();
+		System.out.Println("Id: "+this.TicketId+"Enter time: "+this.enter_time);
+	
+		long endusage=dateTime-starvalidTime;
+		if (endusage>0){
+			return endusage;
+		       
+		}
+		if (endusage<0){
+			endusage=endValidTime-startvalidtime;
+			return Endusage;
+		}
+      
 		// TODO Auto-generated method stub
 		
 	}
