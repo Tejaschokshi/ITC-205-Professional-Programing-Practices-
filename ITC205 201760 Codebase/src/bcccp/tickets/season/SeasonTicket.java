@@ -108,8 +108,25 @@ public class SeasonTicket implements ISeasonTicket {
 	}                              //end of the program
 
 	@Override
+	import java.util.SimpleDateformat; 
+	
 	public void recordUsage(IUsageRecord record) {
-		// TODO Auto-generated method stub
+		get.ticketId(ticketid);           //get method to get ticket Id
+		get.CarparkId(carparkid);           //get method to get carparkId
+		get.startValidTime(startValidTime);       //get method to get startvalidTime
+		get.Endvalidtime(EndValidTime);            //get method to get end validValidTime
+		
+		this.ticketId=id;
+		this.enter_time=new Date();
+		System.out.println("ID: "+this.ticketId+" Enter time: "+this.enter_time); //prints the time the car entered
+	}
+		
+		SimpleDateFormat sdf=new SimpleDateFormat("HH:mm:ss");    //assign current time in sdf
+	     long usage=sdf-startValidPeriod;                           //creates a variable usage and addign some value into it
+	return usage;                                //returns the value
+	                                        
+	        
+					   }// TODO Auto-generated method stub
 		
 	}
 
