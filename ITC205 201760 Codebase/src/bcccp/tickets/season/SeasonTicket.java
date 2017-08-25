@@ -40,7 +40,8 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getId() {
-		get.carpakId(ticketId); //get method that returns the ticketId
+		get.ticketId(ticketId);
+		//get method that returns the ticketId
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -54,6 +55,8 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public long getStartValidPeriod() {
+		get.startValidperiod(startValidperiod);
+		 long x=startValidperiod;
 		// TODO Auto-generated method stub
 		return 0;
 	}
