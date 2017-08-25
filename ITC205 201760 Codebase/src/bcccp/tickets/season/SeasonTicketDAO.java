@@ -10,7 +10,8 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 	
 	
 	public SeasonTicketDAO(IUsageRecordFactory factory) {
-		//TOD Implement constructor
+		//Implementing constructor
+		this.factory = factory;
 	}
 
 
@@ -33,16 +34,17 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 
 	@Override
 	public int getNumberOfTickets() {
-		// TODO Auto-generated method stub
-		return 0;
+		// returning value from method
+		int noOfTickets = 0;
+             		return noOfTickets;
 	}
 
 
 
 	@Override
 	public ISeasonTicket findTicketById(String ticketId) {
-		// TODO Auto-generated method stub
-		return null;
+		ISeasonTicket ticket;               
+		return ticket;
 	}
 
 

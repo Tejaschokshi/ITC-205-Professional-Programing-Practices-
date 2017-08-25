@@ -4,8 +4,10 @@ public class AdhocTicketFactory implements IAdhocTicketFactory {
 
 	@Override
 	public IAdhocTicket make(String carparkId, int ticketNo) {
-		// TODO Auto-generated method stub
-		return null;
+		//implementing constructor
+		AdhocTicket adhocTicket= new AdhocTicket(carparkId,ticketNo," ");
+		// calling result from method after implementation
+		return AdhocTicket;
 	}
 
 

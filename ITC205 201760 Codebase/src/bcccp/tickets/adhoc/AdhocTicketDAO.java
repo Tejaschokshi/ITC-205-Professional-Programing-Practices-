@@ -8,6 +8,7 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	private int currentTicketNo;
 
 	
+
 	
 	public AdhocTicketDAO(IAdhocTicketFactory factory) {
 		IAdhocTicketDAO.factory= factory;
@@ -17,6 +18,10 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 		
 		public String getAdhocTicketDAO(){   //get methods
 			return AdhocTicketDAO; 
+
+	
+	public AdhocTicketDAO(IAdhocTicketFactory factory) {
+
 		//TODO Implement constructor
 	}
 
