@@ -140,7 +140,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean hasExited() {
 		// TODO Auto-generated method stub
-		return false;
+		return exitDateTime;
 	}
 
 	
